@@ -1,0 +1,211 @@
+/* vamo ve se dessa vez funciona kkk */
+
+
+p{ color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+body{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-family: UTF;
+    background-color: black;
+    background-image: url('images/Backgrounds/back2.png');
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.area-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(11, 24, 22);
+    border-radius: 10px;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+
+}
+
+.login form{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+	align-items: center;
+}
+
+.login input{
+    margin-top: 10px;
+    background-color: rgb(39, 59, 57);
+    padding: 5px 10px;
+    color:rgb(245, 245, 245);
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+	width: 90%;
+}
+
+.login img{
+    width:255px;
+    height: auto;
+}
+
+input::placeholder{
+    color:rgb(77, 112, 109);
+    font-size: 14px;
+
+}
+
+form [type="button"]{
+    background-color: rgb(77, 96, 112);
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+
+/* ^ AREA DE LOGIN ACABA AQUI!!!!!!!! */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color:rgba(0,20,0,255);
+    
+}
+
+ul .item {
+	display: flex;
+	justify-content: center;
+}
+
+ul li {
+    list-style: none;
+    float:none;
+    display: inline-block;
+  
+    line-height: 100px;
+    
+   
+
+}
+
+ul li a {
+    display: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    padding: 0 20px;
+
+}
+
+ul li a:hover {
+    color:red;
+}
+
+ 
+#b1 {  
+    position: relative;
+    top: 150px;
+}
+
+/* COMANDO */
+ 
+ body {
+ 
+ background-color: black;
+ 
+ }
+ 
+ .container {
+ 
+ display: flex;
+ justify-content: center;
+ }
+ 
+ .card {
+ 
+     background-color: rgba(0,20,0,255);
+     width: 320px;
+     height: 800px;
+     margin: 50px;
+ 
+ }
+ 
+ 
+ .card-image {
+ 
+     background-color: rgb(0, 0, 0);
+     height: 200px;
+     margin-bottom: 15px;
+     background-size: cover;
+ 
+     
+ }
+ 
+ .pasta-1 {
+  
+     background-image: url('images/Logos/emergency.png')
+ }
+ 
+ .pasta-2 {
+ 
+     background-image: url('images/Logos/core2.png')
+ 
+ }
+ 
+ 
+ .pasta-3 {
+ 
+    background-image: url('images/Logos/blue.png')
+ 
+ }
+ 
+ .card h2 {
+ 
+ padding: 10px;
+ text-align: center;
+ color: rgb(0, 255, 221)
+ 
+ }
+ 
+ .card p {
+ 
+   padding: 10px;
+   text-align: center;
+ 
+ }
+ 
+ 
+ .card a {
+ 
+     background-color: rgb(26, 105, 81);
+     color: black;
+     padding: 30% 10%;
+     display: block;
+ 
+     text-align: center;
+     margin: 20px 50px;
+     border-radius: 50%;
+ 
+ }
+ 
+ 
+
