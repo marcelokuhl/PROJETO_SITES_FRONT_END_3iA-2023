@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+    <title>Calculadora</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>A Calculadora Braba</h1>
+
+    <div class="calculadora">
+      <div class="display">
+        <form>
+        <input type="text" name="display" id="display" readonly/>
+    </form>
+      </div>
+      <div class="botoes">
+        <button value="7" onclick="addNoDisplay('7')">7</button>
+        <button value="8" onclick="addNoDisplay('8')">8</button>
+        <button value="9" onclick="addNoDisplay('9')">9</button>
+        <button class="operador" value=" + " onclick="addNoDisplay('+')">+</button>
+        <br>
+        <button value="4" onclick="addNoDisplay('4')">4</button>
+        <button value="5" onclick="addNoDisplay('5')">5</button>
+        <button value="6" onclick="addNoDisplay('6')">6</button>
+        <button class="operador" value="-" onclick="addNoDisplay('-')">-</button>
+        <br>
+        <button value="1" onclick="addNoDisplay('1')">1</button>
+        <button value="2" onclick="addNoDisplay('2')">2</button>
+        <button value="3" onclick="addNoDisplay('3')">3</button>
+        <button class="operador" value=" × " onclick="addNoDisplay('*')">*</button>
+        <br>
+        <button class="limpar" onclick="limpar()">C</button>
+        <button value="0" onclick="addNoDisplay('0')">0</button>
+        <button class="igual" onclick="calcular()">=</button>
+        <button class="operador" value=" ÷ " onclick="addNoDisplay('/')">/</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
