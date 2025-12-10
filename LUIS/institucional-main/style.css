@@ -1,0 +1,411 @@
+/* configurações iniciais */
+
+* {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /* variaveis de cores */
+
+    --blue: #0008BC;
+    --orange:#E55300;
+    --gray: #888888;
+    --white1: #FFFFFF;
+    --white2: #eaeaea;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    font-size: 2.5rem;
+    z-index: 1;
+}
+
+/*  Fundo */
+
+body {
+    background-color: var(--white1);
+}
+
+/***  Cabeçalho ***/
+
+/* tudo */
+
+.header {
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0px 4px 25px 10px #00000026;
+    background-color: var(--white1);
+}
+
+/* contato */
+
+.head1 {
+    text-decoration: none;
+    display: flex;
+    justify-content: right;
+    background-color: var(--white1);
+    width: 100%;
+}
+
+.headcontato {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 500;
+    padding: 5px 60px 5px 0;
+    font-size: 23px;
+    background-color: var(--white2);
+    padding-left: 80px;
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.headcontato:hover {
+    color: var(--white1);
+    background-color: var(--blue);
+}
+
+
+/* imagem / list */
+
+.head2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    border: 1px solid var(--blue);
+}
+
+/* imagem */
+
+.headimg {
+    background-color: var(--blue);
+    width: 40%;
+    height: 100%;
+    display: flex;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.headimg img {
+    width: auto;
+    height: auto;
+    margin: 11px 250px 11px auto;
+}
+
+/* list */
+
+.headul {
+    width: 70%;
+    height: 101%;
+    margin-left: -125px;
+}
+
+.headul ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+    
+    border-right: none;
+    clip-path: polygon(12.3% 0, 100% 0, 100% 100%, 0 100%);
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+
+    list-style: none;
+    color: var(--orange);
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.headul ul li {
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.headul ul li:hover {
+    color: var(--blue);
+    background-color: var(--white2);
+    cursor: pointer;
+}
+
+/*  menu */
+
+.menus {
+    display: flex;
+    position: fixed;
+    top: 105px;
+    z-index: 3;
+    background-color: var(--white1);
+    box-shadow: 0px 5px 10px 10px #00000016;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menus ul {
+    padding: 0 10px 0 10px;
+}
+
+.menus ul li {
+    list-style: none;
+    font-size: 22px;
+    color: var(--blue);
+    margin: 10px 50px 10px 10px;
+}
+
+.menus ul hr {
+    margin-left: 6%;
+    border-top: 2px solid rgba(103, 103, 103, 0.486);
+    height: 0;
+    background-color: transparent;
+    width: 88%;
+}
+
+/*  Div1 */
+
+.main1 {
+    padding-top: 8vw;
+    height: 40vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main1 div {
+    width: 50%;
+    padding-inline: 80px;
+    gap: 80px;
+}
+
+.imgplanta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgplanta div {
+    border-radius: 100px;
+    z-index: 1;
+    box-shadow: 0px 4px 25px 10px #00000026;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 430px;
+    width: 220px;
+    transition: background-color 0.5s;
+}
+
+.imgplanta img {
+    width: 160%;
+    z-index: 2;
+    margin: 5px 40px 40px 10px;
+    transition: width 0.5s;
+}
+
+.imgplanta div:hover img {
+    width: 170%;
+}
+
+.imgplanta div:hover {
+    background-color: #FFFFFF;
+}
+
+.caixatexto1 {
+    color: var(--blue);
+    font-weight: 500;
+    font-size: 60px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Div2 */
+
+.main2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 44vw;
+}
+
+.main2 .pizza {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main2 .pizza img {
+    height: 450px;
+}
+
+.main2 .caixatexto2 {
+    color: var(--white1);
+    background: linear-gradient(90deg, var(--blue) 0%, rgb(7, 0, 100) 100%);
+    width: 37%;
+    border-radius: 30px 0 0 30px;
+    height: 100%;
+}
+
+.main2 .caixatexto2 div {
+    width: 88%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 65px;
+}
+
+.main2 .caixatexto2 div h2 {
+    font-size: 50px;
+    width: 100%;
+    text-align: right;
+}
+
+.main2 .caixatexto2 div p {
+    width: 100%;
+    text-align: right;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.main2 .caixatexto2 div input {
+    border-radius: 60px;
+    width: 45%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: var(--white1);
+    color: var(--orange);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main2 .caixatexto2 div input:hover {
+    background-color: var(--gray);
+    color: var(--white2);
+    cursor: pointer;
+}
+
+/*  Div3 */
+
+.main3 {
+    height: 50vw;
+}
+
+.main3 div {
+    background-color: var(--blue);
+    margin-top: 200px;
+    margin-bottom: 200px;
+    width: 100%;
+    height: 80%;
+    -webkit-transform: skew(0deg, -3deg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main3 div div {
+    -webkit-transform: skew(0deg, 3deg);
+}
+
+.main3 div div section {
+    background-color: var(--white2);
+    width: 340px;
+    padding: 7px;
+    margin: 20px;
+    border-radius: 30px;
+    z-index: 1;
+    transition: width 0.4s;
+    transition: border 0.4s;
+    transition: box-shadow 0.2s;
+}
+
+.main3 div div section:hover {
+    border-top: 1px solid var(--white2);
+    border-bottom: 1px solid var(--white2);
+    width: 342px;
+    box-shadow: 0px 4px 25px 10px #00000089;
+    cursor: pointer;
+}
+
+.main3 div div section div {
+    background-color: var(--gray);
+    z-index: 2;
+}
+
+.main3 div div section h3 {
+    text-align: center;
+}
+
+/*  Rodapé */
+
+.footer {
+    border-radius: 30px 30px 0 0;
+    border-top: 2px solid rgb(189, 189, 189);
+    background-color: var(--gray);
+    height: 45vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer div {
+    color: var(--white1);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footer div h1 {
+    width: 100%;
+    margin-left: 25%;
+}
+
+.footer div section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer div section a {
+    text-align: left;
+    width: 100%;
+    margin-left: 20%;
+}
+
+/*///  to top  ////*/
+
+.to-top {
+    margin: 0;
+    padding: 0%;
+    font-size: 40px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-color: #FFFFFF;
+    border-radius: 1000px;
+    color: rgb(106, 106, 106);
+    transition: color 0.7s;
+}
+
+.to-top:hover {
+    color: var(--blue);
+}
+
+/*/////////////// */
