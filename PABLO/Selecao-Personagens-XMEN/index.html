@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto X-Men - Trabalho IPW 2023 - 3iA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+
+    <style>
+      /* Estilo personalizado para o elemento de áudio */
+      audio {
+        color: #000000; /* Define a cor do texto */
+        padding: 10px; /* Adiciona um espaçamento interno para melhorar a aparência */
+        margin-bottom: 15px; /* Define a margem superior para mover o player para baixo */
+      }
+    </style>
+  </head>
+  <body>
+    <audio src="./src/audio/audip-xmem-evolution.mp3" autoplay controls></audio>
+
+    <header class="cabecalho">
+      <img
+        class="logo"
+        src="./src/imgs/logo.png"
+        height="100"
+        alt="Logo X-Men"
+      />
+    </header>
+
+    <main class="selecao-de-personagens">
+      <selection class="personagens">
+        <h1 class="título" style="font-family: Oxanium">
+          Selecione um personagem
+        </h1>
+        <ul class="lista-de-personagens">
+          <li
+            class="personagem selecionado"
+            id="ciclope"
+            data-name="Ciclope"
+            data-description="Também conhecido como Scott Summers, ele é um mutante com a habilidade de emitir rajadas de energia óptica de seus olhos. Ele é o líder dos X-Men e um estrategista habilidoso"
+          >
+            <img
+              src="./src/imgs/card-ciclope.jpg"
+              alt="Personagem Ciclope"
+              height="200"
+              width="130"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="jean-grey"
+            data-name="Jean Grey"
+            data-description="Ela é uma telepata e telecinética poderosa, capaz de ler mentes, mover objetos com sua mente e manipular a realidade. Ela também é a hospedeira do Fênix, uma entidade cósmica que lhe concede poderes ainda maiores"
+          >
+            <img
+              src="./src/imgs/card-jean-grey.jpg"
+              alt="Personagem Jean Grey"
+              height="200"
+              width="130"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="lince-negra"
+            data-name="Lince Negra"
+            data-description="Também conhecida como Kitty Pryde, ela tem a habilidade de se tornar intangível e passar através de objetos sólidos. Ela também pode caminhar em paredes e projetar sua consciência para o passado"
+          >
+            <img
+              src="./src/imgs/card-lince-negra.jpg"
+              alt="Personagem Lince Negra"
+              height="200"
+              width="130"
+            />
+          </li>
+          <li
+            class="personagem"
+            id="tempestade"
+            data-name="Tempestade"
+            data-description="Também conhecida como Ororo Munroe, ela tem a habilidade de controlar o clima, incluindo ventos, chuva, raios e neve. Ela também é uma lutadora habilidosa e uma líder forte"
+          >
+            <img
+              src="./src/imgs/card-tempestade.jpg"
+              alt="Personagem Tempestade"
+              height="200"
+              width="130"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="vampira"
+            data-name="Vampira"
+            data-description="Também conhecida como Anna Marie, ela tem a habilidade de absorver as memórias, habilidades e poderes de outras pessoas através do toque. Ela também pode voar e tem força sobre-humana"
+          >
+            <img
+              src="./src/imgs/card-vampira.jpg"
+              alt="Personagem Vampira"
+              height="200"
+              width="130"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="wolverine"
+            data-name="Wolverine"
+            data-description="Também conhecido como Logan, ele tem garras retráteis de adamantium em suas mãos e um fator de cura que lhe permite se recuperar rapidamente de ferimentos. Ele também tem sentidos aguçados e é um lutador habilidoso"
+          >
+            <img
+              src="./src/imgs/card-wolverine.jpg"
+              alt="Personagem Wolverine"
+              height="200"
+              width="130"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="noturno"
+            data-name="Noturno"
+            data-description="Também conhecido como Kurt Wagner, ele tem a habilidade de se teletransportar para qualquer lugar que possa ver ou conhecer bem. Ele também tem pele azul e cauda preênsil"
+          >
+            <img
+              src="./src/imgs/card-noturno.jpg"
+              alt="Personagem Noturno"
+              height="200"
+              width="130"
+            />
+          </li>
+
+          <li
+            class="personagem"
+            id="magneto"
+            data-name="Magneto"
+            data-description="Também conhecido como Erik Lehnsherr, ele tem a habilidade de controlar campos magnéticos e metais. Ele é um dos vilões mais icônicos dos X-Men e líder da Irmandade dos Mutantes"
+          >
+            <img
+              src="./src/imgs/card-magneto.jpg"
+              alt="Personagem Magneto"
+              height="200"
+              width="130"
+            />
+          </li>
+        </ul>
+      </selection>
+      <selection class="personagem-grande">
+        <img
+          id="visu"
+          src="./src/imgs/card-ciclope.png"
+          alt="Personagem Selecionado"
+          height="300"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">CICLOPE</h2>
+          <p class="descricao-personagem" id="descricao-personagem"></p>
+        </div>
+      </selection>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
